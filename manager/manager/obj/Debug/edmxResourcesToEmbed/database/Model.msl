@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="DataDetails">
+      <EntityTypeMapping TypeName="Model.DataDetail">
+        <MappingFragment StoreEntitySet="DataDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="P0" ColumnName="P0" />
+          <ScalarProperty Name="p1" ColumnName="p1" />
+          <ScalarProperty Name="p2" ColumnName="p2" />
+          <ScalarProperty Name="p3" ColumnName="p3" />
+          <ScalarProperty Name="p4" ColumnName="p4" />
+          <ScalarProperty Name="p5" ColumnName="p5" />
+          <ScalarProperty Name="p6" ColumnName="p6" />
+          <ScalarProperty Name="p7" ColumnName="p7" />
+          <ScalarProperty Name="p8" ColumnName="p8" />
+          <ScalarProperty Name="p9" ColumnName="p9" />
+          <ScalarProperty Name="p10" ColumnName="p10" />
+          <ScalarProperty Name="p11" ColumnName="p11" />
+          <ScalarProperty Name="p12" ColumnName="p12" />
+          <ScalarProperty Name="p13" ColumnName="p13" />
+          <ScalarProperty Name="p14" ColumnName="p14" />
+          <ScalarProperty Name="p15" ColumnName="p15" />
+          <ScalarProperty Name="p16" ColumnName="p16" />
+          <ScalarProperty Name="p17" ColumnName="p17" />
+          <ScalarProperty Name="p18" ColumnName="p18" />
+          <ScalarProperty Name="p19" ColumnName="p19" />
+          <ScalarProperty Name="p20" ColumnName="p20" />
+          <ScalarProperty Name="p21" ColumnName="p21" />
+          <ScalarProperty Name="p22" ColumnName="p22" />
+          <ScalarProperty Name="Datewrite" ColumnName="Datewrite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sums">
+      <EntityTypeMapping TypeName="Model.Sum">
+        <MappingFragment StoreEntitySet="Sum">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DateWrite" ColumnName="DateWrite" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Elec" ColumnName="Elec" />
+          <ScalarProperty Name="Water" ColumnName="Water" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

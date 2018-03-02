@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DataDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="P0" Type="int" Nullable="false" />
+          <Property Name="p1" Type="int" Nullable="false" />
+          <Property Name="p2" Type="int" Nullable="false" />
+          <Property Name="p3" Type="int" Nullable="false" />
+          <Property Name="p4" Type="int" Nullable="false" />
+          <Property Name="p5" Type="int" Nullable="false" />
+          <Property Name="p6" Type="int" Nullable="false" />
+          <Property Name="p7" Type="int" Nullable="false" />
+          <Property Name="p8" Type="int" Nullable="false" />
+          <Property Name="p9" Type="int" Nullable="false" />
+          <Property Name="p10" Type="int" Nullable="false" />
+          <Property Name="p11" Type="int" Nullable="false" />
+          <Property Name="p12" Type="int" Nullable="false" />
+          <Property Name="p13" Type="int" Nullable="false" />
+          <Property Name="p14" Type="int" Nullable="false" />
+          <Property Name="p15" Type="int" Nullable="false" />
+          <Property Name="p16" Type="int" Nullable="false" />
+          <Property Name="p17" Type="int" Nullable="false" />
+          <Property Name="p18" Type="int" Nullable="false" />
+          <Property Name="p19" Type="int" Nullable="false" />
+          <Property Name="p20" Type="int" Nullable="false" />
+          <Property Name="p21" Type="int" Nullable="false" />
+          <Property Name="p22" Type="int" Nullable="false" />
+          <Property Name="Datewrite" Type="date" />
+        </EntityType>
+        <EntityType Name="Sum">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="DateWrite" Type="date" Nullable="false" />
+          <Property Name="Room" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Elec" Type="int" Nullable="false" />
+          <Property Name="Water" Type="int" Nullable="false" />
+          <Property Name="Total" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="DataDetail" EntityType="Self.DataDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sum" EntityType="Self.Sum" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DataDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="P0" Type="Int32" Nullable="false" />
+          <Property Name="p1" Type="Int32" Nullable="false" />
+          <Property Name="p2" Type="Int32" Nullable="false" />
+          <Property Name="p3" Type="Int32" Nullable="false" />
+          <Property Name="p4" Type="Int32" Nullable="false" />
+          <Property Name="p5" Type="Int32" Nullable="false" />
+          <Property Name="p6" Type="Int32" Nullable="false" />
+          <Property Name="p7" Type="Int32" Nullable="false" />
+          <Property Name="p8" Type="Int32" Nullable="false" />
+          <Property Name="p9" Type="Int32" Nullable="false" />
+          <Property Name="p10" Type="Int32" Nullable="false" />
+          <Property Name="p11" Type="Int32" Nullable="false" />
+          <Property Name="p12" Type="Int32" Nullable="false" />
+          <Property Name="p13" Type="Int32" Nullable="false" />
+          <Property Name="p14" Type="Int32" Nullable="false" />
+          <Property Name="p15" Type="Int32" Nullable="false" />
+          <Property Name="p16" Type="Int32" Nullable="false" />
+          <Property Name="p17" Type="Int32" Nullable="false" />
+          <Property Name="p18" Type="Int32" Nullable="false" />
+          <Property Name="p19" Type="Int32" Nullable="false" />
+          <Property Name="p20" Type="Int32" Nullable="false" />
+          <Property Name="p21" Type="Int32" Nullable="false" />
+          <Property Name="p22" Type="Int32" Nullable="false" />
+          <Property Name="Datewrite" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Sum">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="DateWrite" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Room" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Elec" Type="Int32" Nullable="false" />
+          <Property Name="Water" Type="Int32" Nullable="false" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DataDetails" EntityType="Self.DataDetail" />
+          <EntitySet Name="Sums" EntityType="Self.Sum" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="DataDetails">
+            <EntityTypeMapping TypeName="Model.DataDetail">
+              <MappingFragment StoreEntitySet="DataDetail">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="P0" ColumnName="P0" />
+                <ScalarProperty Name="p1" ColumnName="p1" />
+                <ScalarProperty Name="p2" ColumnName="p2" />
+                <ScalarProperty Name="p3" ColumnName="p3" />
+                <ScalarProperty Name="p4" ColumnName="p4" />
+                <ScalarProperty Name="p5" ColumnName="p5" />
+                <ScalarProperty Name="p6" ColumnName="p6" />
+                <ScalarProperty Name="p7" ColumnName="p7" />
+                <ScalarProperty Name="p8" ColumnName="p8" />
+                <ScalarProperty Name="p9" ColumnName="p9" />
+                <ScalarProperty Name="p10" ColumnName="p10" />
+                <ScalarProperty Name="p11" ColumnName="p11" />
+                <ScalarProperty Name="p12" ColumnName="p12" />
+                <ScalarProperty Name="p13" ColumnName="p13" />
+                <ScalarProperty Name="p14" ColumnName="p14" />
+                <ScalarProperty Name="p15" ColumnName="p15" />
+                <ScalarProperty Name="p16" ColumnName="p16" />
+                <ScalarProperty Name="p17" ColumnName="p17" />
+                <ScalarProperty Name="p18" ColumnName="p18" />
+                <ScalarProperty Name="p19" ColumnName="p19" />
+                <ScalarProperty Name="p20" ColumnName="p20" />
+                <ScalarProperty Name="p21" ColumnName="p21" />
+                <ScalarProperty Name="p22" ColumnName="p22" />
+                <ScalarProperty Name="Datewrite" ColumnName="Datewrite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sums">
+            <EntityTypeMapping TypeName="Model.Sum">
+              <MappingFragment StoreEntitySet="Sum">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DateWrite" ColumnName="DateWrite" />
+                <ScalarProperty Name="Room" ColumnName="Room" />
+                <ScalarProperty Name="Elec" ColumnName="Elec" />
+                <ScalarProperty Name="Water" ColumnName="Water" />
+                <ScalarProperty Name="Total" ColumnName="Total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

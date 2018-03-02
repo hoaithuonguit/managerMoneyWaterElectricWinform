@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DataDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="P0" Type="Int32" Nullable="false" />
+    <Property Name="p1" Type="Int32" Nullable="false" />
+    <Property Name="p2" Type="Int32" Nullable="false" />
+    <Property Name="p3" Type="Int32" Nullable="false" />
+    <Property Name="p4" Type="Int32" Nullable="false" />
+    <Property Name="p5" Type="Int32" Nullable="false" />
+    <Property Name="p6" Type="Int32" Nullable="false" />
+    <Property Name="p7" Type="Int32" Nullable="false" />
+    <Property Name="p8" Type="Int32" Nullable="false" />
+    <Property Name="p9" Type="Int32" Nullable="false" />
+    <Property Name="p10" Type="Int32" Nullable="false" />
+    <Property Name="p11" Type="Int32" Nullable="false" />
+    <Property Name="p12" Type="Int32" Nullable="false" />
+    <Property Name="p13" Type="Int32" Nullable="false" />
+    <Property Name="p14" Type="Int32" Nullable="false" />
+    <Property Name="p15" Type="Int32" Nullable="false" />
+    <Property Name="p16" Type="Int32" Nullable="false" />
+    <Property Name="p17" Type="Int32" Nullable="false" />
+    <Property Name="p18" Type="Int32" Nullable="false" />
+    <Property Name="p19" Type="Int32" Nullable="false" />
+    <Property Name="p20" Type="Int32" Nullable="false" />
+    <Property Name="p21" Type="Int32" Nullable="false" />
+    <Property Name="p22" Type="Int32" Nullable="false" />
+    <Property Name="Datewrite" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="Sum">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DateWrite" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Room" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Elec" Type="Int32" Nullable="false" />
+    <Property Name="Water" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DataDetails" EntityType="Self.DataDetail" />
+    <EntitySet Name="Sums" EntityType="Self.Sum" />
+  </EntityContainer>
+</Schema>
